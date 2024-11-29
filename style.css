@@ -1,0 +1,280 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #f5a623;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f5a623;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+}
+
+#home {
+    background-color: #333;
+    text-align: center;
+}
+
+#home .banner {
+    position: relative;
+    text-align: center;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+#home h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+.section-light {
+    background-color: #222;
+    font-size: 18px;
+}
+
+.section-dark {
+    background-color: #1b1b1b;
+}
+
+.noticias {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.noticia {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.noticia h3 {
+    margin-top: 10px;
+    color: #f5a623;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+form button {
+    background-color: #f5a623;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f39c12;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    color: #bbb;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+.banner img {
+    width: 50%; /* Ajuste o valor para o tamanho desejado */
+    max-width: 62%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja um bloco */
+}
+.banner p {
+    font-size: 20px;
+}
+/* Estilo para as imagens na página sobre */
+.imagens-sobre {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border-image-width: center;
+}
+
+.imagem-sobre {
+    width: 48%; /* Ajuste a largura das imagens */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Se quiser bordas arredondadas */
+}
+/* Centraliza a seção de botões */
+.buttonsback {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço superior, ajustável conforme necessário */
+}
+
+/* Estilo para os botões */
+.button {
+    padding: 12px 25px; /* Ajuste o tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #000000; /* Cor do texto */
+    background-color: #ccc; /* Fundo cinza */
+    border: 2px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s, border-color 0.3s; /* Efeito de transição */
+}
+
+.button:hover {
+    background-color: #fff; /* Fundo branco ao passar o mouse */
+    color: #333; /* Cor do texto ao passar o mouse */
+    border-color: #aaa; /* Borda mais escura ao passar o mouse */
+}
+/* Estilo para a seção de contato */
+#contato {
+    padding: 20px;
+    background-color: #010101;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #000; /* Cor preta para os labels */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000; /* Cor preta para o texto nos campos */
+    background-color: #fff; /* Fundo branco para os campos */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para a mensagem de sucesso */
+.sucesso {
+    background-color: #e8f7e9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sucesso span {
+    font-size: 36px;
+}
+
+.sucesso p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
